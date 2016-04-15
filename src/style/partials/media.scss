@@ -1,3 +1,189 @@
-body{
-  //background-color: yellow;
+@media screen and(max-width: 1024px) {
+  .footer-top{
+    height : 0;
+  }
+}
+
+@media screen and(max-width: 990px) {
+  .wrapper-a{
+    padding : 0 15px;
+  }
+  
+  .tickets-a {
+    .item{
+      li {
+        padding: 16px 5px 16px 3px;
+      }
+    } 
+  }
+  .camera-box-a {
+    
+    .wr-camer-a {
+      width: 105%;
+    }
+    .item-camera-a{
+      width : 32%;
+      margin : 0 1.333% 1.333% 0;
+      height: 255px;
+      &.big{
+        width : 63%;
+      }
+      img{
+        width : 100%;
+      }
+      .text {
+        padding: 10px;
+        p{
+          font-size : 13px;
+        }
+      }
+    }
+  }
+  .button-port-a {
+    width: 45%;
+  }
+  .button-pop-a{
+    width : 39%;
+  }
+  .map-a{
+    h4{
+      br{
+        display : none;
+      }
+    }
+  }
+  
+}
+
+@media screen and(max-width: 767px) {
+  .hidden-sm-down{
+    display : none!important;
+  }
+  .hidden-sm-up{
+    display : block!important;
+  }
+  table{
+    &.hidden-sm-down{
+      display : none!important;;
+    }
+  }
+  table{
+    &.hidden-sm-up{
+      display : table!important;;
+    }
+  }
+  
+  .section-title-a{
+    margin : 10px 0;
+  }
+  .list-ferry-a{
+    float : none;
+  }
+
+  .tabs-big-cont-a {
+    margin-top: 10px;
+  }
+  .tabs-min-a {
+    li{
+      a{
+        font-size: 16px;
+        padding: 10px 0;
+      }
+    } 
+  }
+  .ferry-schedule-a {
+    padding: 10px 0;
+  }
+  .tabs-min-a {
+    .item {
+      padding: 20px 16px;
+      margin-bottom : 10px;
+      table{
+        tr{
+          &:first-child{
+            td{
+              font-weight : normal;
+            }
+          }
+        }
+        td {
+          &:first-child{
+            font-weight : bold;
+            font-size : 17px;
+          }
+        }
+      } 
+    }
+  }
+
+  .tickets-a {
+    .item {
+      float: none;
+      width: auto;
+      max-width : 500px;
+      margin : 0 auto;
+      &:last-child{
+        ul{
+          &:before{
+            display : block;
+          }
+        }
+      }
+    }
+  }
+ 
+  .camera-box-a {
+    .wr-camer-a{
+      width : 100%;
+    }
+    .item-camera-a{
+      float : none;
+      width : auto!important;
+      max-width : 500px;
+      margin : 0 auto 10px;
+      height: 330px;
+      img{
+        height: 330px;
+      }
+    }
+  }
+
+
+  .tickets-online{
+    margin: 17px 0;
+    padding: 20px 13px;
+  }
+  .button-port-a{
+    font-size : 16px;
+    padding: 6px 0;
+    text-align : center;
+    width: 49%;
+    -webkit-border-radius : 0;
+    -moz-border-radius    : 0;
+    border-radius         : 0;
+  }
+
+  .button-pop-a {
+    width: 100%;
+    padding : 10px 0;
+    margin-bottom : 20px;
+  }
+  
+  .tickets-online p {
+    float : none;
+    width : 100%;
+  }
+  .cont-port-a {
+    padding: 25px 0 0;
+  }
+  .map-a {
+    h4 {
+      font-size : 14px;
+    }
+  }
+  .maps-a {
+    height: 270px;
+  }
+  
+  
 }

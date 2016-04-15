@@ -396,6 +396,26 @@ h4{
   width : 100%;
 }
 
+
+
+.hidden-sm-down{
+  display : block!important;
+}
+.hidden-sm-up{
+  display : none!important;
+}
+
+table{
+  &.hidden-sm-down{
+    display : table!important;;
+  }
+}
+table{
+  &.hidden-sm-up{
+    display : none!important;;
+  }
+}
+
 //************ ПЛАВНАЯ АНИМАЦИЯ ***********//
 //@include transition(all 0.5s $ease-out-cubic);
 
