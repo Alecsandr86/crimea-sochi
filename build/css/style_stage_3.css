@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* = Contacts
+---------------------------------------------
+--------------------------------------------- */
+.medium-title.one-e {
+    margin-top: 0px;
+}
+
+.two-block-contacts {
+    clear: both;
+    overflow: hidden;
+    padding-bottom: 11px;
+}
+
+.two-block-contacts span {
+    display: inline-block;
+    padding-right: 10px;
+    width: 140px;
+}
+
+.left-bcont {
+    float: left;
+    width: 49%;
+}
+
+.right-bcont {
+    float: right;
+    width: 49%;
+}
+
+.one-cont-position {
+    clear: both;
+    overflow: hidden;
+    padding: 0 0 6px 0;
+}
+
+.cleft {
+    overflow: hidden;
+}
+
+.reservation-form .cell.nleft {
+    float: left;
+    width: 201px;
+}
+
+.captcha-code {
+    float: left;
+    background-color: #fff;
+    border: 1px solid #000;
+    min-height: 50px;
+    margin: 1px 10px 0 0;
+    width: 150px;
+}
+
+.ccapch input,
+.reservation-form .ccapch input[type=text] {
+    width: 102px !important;
+}
+
+.enter-code-cp {
+    float: left;
+    width: 102px;
+    margin-right: 8px;
+}
+
+.buttons.cright {
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+.ppcode {
+    overflow: hidden;
+    float: left;
+}
+
+.ppcode span {
+    display: table-cell;
+    vertical-align: middle;
+    height: 52px;
+}
+
+
+/* = News
+---------------------------------------------
+--------------------------------------------- */
+.sight-news {
+    position: relative;
+    width: 306px;
+    height: 250px;
+    margin: 0px 21px 20px 0px;
+    float: left;
+    overflow: hidden;
+    line-height: 1.2;
+}
+
+.sight-news .sight-article-title {
+    margin-bottom: 0px !important;
+}
+
+.sight-news .sight-article-location {
+    margin-top: 5px !important;
+}
+
+.news-item .page-title {
+    padding-right: 0px;
+}
+
+.date-news {
+    color: #8c8c8c;
+    padding: 10px 0 15px 0;
+}
+
+.news-item .content-tab img {
+    max-width: 100%;
+}
+
+
+/* = 600 screen
+---------------------------------------------
+--------------------------------------------- */
+@media screen and (max-width:1024px) {
+
+    .captcha-code {
+        float: none;
+        clear: both;
+        margin-bottom: 8px;
+        overflow: hidden;
+    }
+
+    .reservation-form .nleft .form-label {
+        padding-top: 21px;
+    }
+
+    .reservation-form .cleft textarea {
+        width: 98% !important;
+    }
+}
+
+
+/* = 320 screen
+---------------------------------------------
+--------------------------------------------- */
+
+@media screen and (max-width:599px) {
+    .one-cont-position {
+        padding-bottom: 16px;
+    }
+
+    .reservation-form .cell.nleft {
+        float: none;
+    }
+
+    .reservation-form .nleft .form-label {
+        padding-top: 10px;
+    }
+
+    .reservation-form .cleft textarea {
+        width: 100% !important;
+    }
+
+    .buttons.cright.ucent {
+        text-align: center;
+    }
+
+    .ppcode {
+        width: 160px;
+    }
+
+    .date-news {
+        padding: 0px;
+    }
+}

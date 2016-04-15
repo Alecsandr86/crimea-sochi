@@ -1,0 +1,28 @@
+@import "path";
+//////////////////////////////////////////////////////
+
+
+//   Font Stacks  НАБОРЫ БАЗОВЫХ ШРИФТОВ bourbon
+
+//font-family: $georgia;
+//font-family: $helvetica;
+//font-family: $lucida-grande;
+//font-family: $monospace;
+//font-family: $verdana;
+$arial: "Arial", "Helvetica Neue", "Helvetica", "Roboto", sans-serif;
+
+body{
+  font-family: $arial;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 300;
+  color: #000;
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  min-width: 1100px;
+  line-height: 1.4;
+  position: relative;
+  -webkit-text-size-adjust: none;
+  
+}

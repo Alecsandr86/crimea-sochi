@@ -1,0 +1,405 @@
+@import "partials/path";
+@import "partials/print";
+/////////////////////////////////////
+
+
+
+.left{
+  float :left;
+}
+
+.right{
+  float :right;
+}
+
+.both:after{
+  clear   :both;
+  content :"";
+  display :block;
+  float   :none;
+  margin  :0;
+  padding :0;
+}
+
+.cr{
+  float     :none;
+  clear     :both;
+  margin    :0;
+  padding   :0;
+  font-size :0.1px;
+  display   :block;
+}
+
+.outer{
+  &:before{
+    content        :'';
+    display        :inline-block;
+    height         :100%;
+    vertical-align :middle;
+  }
+}
+
+// ferry-schedule
+.ferry-schedule-a{
+  background : url('../images/bg-ferry.jpg') 50% 0 no-repeat;
+  -webkit-background-size : cover;
+  background-size         : cover;
+  min-height : 451px;
+  padding: 10px 0 0;
+}
+.wrapper-a{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.section-title-a{
+  border-left : 4px solid #ffce23;
+  padding: 2px 0 0 16px;
+  margin : 28px 0;
+  h2{
+    margin : 0;
+  }
+}
+
+.list-ferry-a{
+  float : right;
+  margin : 0;
+  padding: 10px 0;
+  .active{
+    a{
+      border-bottom-color : transparent;
+    }
+  }
+  li{
+    display : inline-block;
+  }
+  a{
+    display : inline-block;
+    font-family : $ff-pts;
+    font-weight : bold;
+    color : #000;
+    font-size : 17px;
+    text-decoration : none;
+    border-bottom : 2px dotted #000;
+    margin: 0 0 0 9px;
+  }
+}
+
+.tabs-big-a{
+  
+}
+
+
+.tabs-big-cont-a{
+  margin-top : 24px;
+  .items{
+    display : none;
+    &.active{
+      display : block;
+    }
+  }
+}
+
+
+
+.tabs-min-a{
+  ul{
+    list-style : none;
+    margin : 0;
+    padding : 0;
+  }
+  li{
+    display : inline-block;
+    width : 49.8%;
+    float : left;
+    text-align : center;
+    background-color: #25aae1;
+    border-radius: 2px 2px 0 0;
+    margin : 0 0.2% 0 0;
+    &:last-child{
+      margin : 0;
+      float : right;
+    }
+    a{
+      display : inline-block;
+      font-family : $ff-pts;
+      font-weight : bold;
+      font-size : 20px;
+      text-decoration : none;
+      padding : 19px 0;
+      color : #fff;
+    }
+    &.active{
+      background-color : #fff;
+      a{
+        color : #212121;
+      }
+    }
+  }
+ 
+  .item{
+    display : none;
+    background-color : #fff;
+    background-color : rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+    padding: 45px 17px;
+    &.active{
+      display : block;
+    }
+    table{
+      width : 100%;
+      border-spacing: 0;
+      tr{
+        &:last-child{
+          td{
+            border-bottom : none;
+          }
+        }
+      }
+      td{
+        text-align : center;
+        border-right : 1px solid #e2e6ea;
+        border-bottom : 1px solid #e2e6ea;
+        font-weight : bold;
+        font-size : 17px;
+        padding : 10px;
+        &:first-child{
+          font-weight : normal;
+          font-size : 14px;
+        }
+        &:last-child{
+          border-right : none;
+        }
+      }
+    }
+  }
+}
+
+.tickets-a{
+  .item{
+    float : left;
+    width : 33.333%;
+    &:last-child{
+      ul{
+        &:before{
+          display : none;
+        }
+      }
+    }
+    strong{
+      font-family : $ff-pts;
+      font-weight : bold;
+      font-size : 20px;
+      display : inline-block;
+      padding : 14px 0;
+    }
+    ul{
+      border-top : 4px solid #8dc63f;
+      list-style : none;
+      margin : 0;
+      padding : 10px 0;
+      position :  relative;
+      &:before{
+        content : '';
+        width : 2px;
+        height : 6px;
+        display : inline-block;
+        background-color :  #8dc63f;
+        position : absolute;
+        top : -8px;
+        right : 0;
+      }
+    }
+    li{
+      min-height: 19px;
+      padding: 16px 25px 16px 8px;
+      font-size : 14px;
+      clear     : both;
+      content   : "";
+      display   : block;
+      float     : none;
+      margin    : 0;
+      background-color :  #fff;
+      border-right : 1px solid #fff; 
+      &:nth-child(2n+1){
+        background-color :  #f4f6f7;
+        span{
+          background-color :  #f4f6f7;
+        }
+      }
+    }
+    .bg-dotted{
+      display : block;
+      background : url('../images/tickets-a-li.png') 0 80% repeat-x;
+      i{
+        font-size : 11px;
+      }
+      span{
+        background-color :  #fff;
+        padding : 0 3px;
+      }
+    }
+    .red-pic{
+      font-weight : bold;
+      font-size : 17px;
+      color : #e04c5a;
+      display : inline-block;
+      float : right;
+    }
+  }
+}
+
+// \ferry-schedule\
+
+
+// camera-box-a
+
+.camera-box-a{
+  width : 100%;
+  overflow : hidden;
+  .wr-camer-a{
+    width : 110%;
+  }
+  .item-camera-a{
+    float : left;
+    width : 306px;
+    height : 330px;
+    background-color : #184a66;
+    color : #fff;
+    font-size : 14px;
+    margin : 0 20px 20px 0;
+    &.big{
+      width : 630px;
+    }
+    .text{
+      padding : 50px 20px;
+    }
+    p{
+      
+    }
+    a{
+      display : block;
+      text-decoration : none;
+      margin: 0 0 -5px;
+      position : relative;
+      strong{
+        position : absolute;
+        left : 0;
+        bottom : 5px;
+        right : 0;
+        display : block;
+        font-family : $ff-pts;
+        font-size : 28px;
+        line-height : 30px;
+        text-transform : uppercase;
+        color : #fff;
+        padding : 30px 20px;
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+        background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+      }
+    }
+  }
+}
+
+// \camera-box-a\
+
+// tickets-online
+
+.tickets-online{
+  background-color : #25aae1;
+  padding: 42px 21px 31px;
+  margin: 47px 0;
+  a,i{
+    vertical-align : middle;
+  }
+  i{
+    margin: 0 18px 0 10px;
+  }
+  p{
+    font-size : 14px;
+    color :#fff;
+    a{
+      color :#fff;
+    }
+  }
+}
+.cont-port-a{
+  padding: 34px 0 0;
+  p{
+    width : 60%;
+    float :left;
+  }
+}
+.button-pop-a{
+  width: 350px;
+  background-color: #ffce23;
+  border-radius: 2px;
+  box-shadow: 0 4px 0 #b87e00;
+  text-shadow: 0 1px 1px #ffeeb4;
+  color: #212121;
+  font-size: 20px;
+  font-weight: 700;
+  display : inline-block;
+  text-decoration : none;
+  padding : 15px 0;
+  text-align : center;
+}
+.button-port-a{
+  display : inline-block;
+  width: 425px;
+  padding: 13px 25px;
+  background-color: white;
+  border: 1px solid #eaf2f3;
+  border-radius: 4px;
+  color: #3b3b3b;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration : none;
+}
+
+
+// \tickets-online\
+
+
+// map-a
+
+h4{
+  font-family : $ff-pts;
+  font-size : 21px;
+  
+}
+.map-a{
+  h4{
+    text-transform : uppercase;
+    text-align : center;
+    font-weight : normal;
+    margin : 0;
+    padding : 0 0 16px;
+  }
+  
+}
+
+.maps-a{
+  width : 100%;
+  height : 455px;
+}
+
+// \map-a\
+
+.bdn-a{
+  padding-bottom : 0;
+}
+.footer-top{
+  height : 200px;
+  width : 100%;
+}
+
+//************ ПЛАВНАЯ АНИМАЦИЯ ***********//
+//@include transition(all 0.5s $ease-out-cubic);
+
+
+
+/////////////////////////////////////////
+@import "partials/media";
