@@ -32,4 +32,12 @@ $(document).ready(function(){
 
     });
 
+    
+    
+    $('.articles-nav li.active').find("ul").slideDown();
+    $('.articles-nav').on('click', "li:not(.active)", function () {
+        $('.articles-nav li').removeClass("active").find('ul').slideUp();
+        $(this).addClass("active").find('ul').slideDown();
+    });
+
 });
